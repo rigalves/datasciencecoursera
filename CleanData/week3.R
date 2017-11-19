@@ -201,8 +201,7 @@ tail(select(chicago, date, pm25tmean2), 3)
 
 head(chicago[, 1:5], 3)
 
-chicago <- rename(chicago, dewpoint = dptp, 
-                  pm25 = pm25tmean2)
+chicago <- rename(chicago, dewpoint = dptp, pm25 = pm25tmean2)
 head(chicago[, 1:5], 3)
 
 chicago <- mutate(chicago, 
